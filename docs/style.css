@@ -88,15 +88,25 @@ section {
     text-align: center;
 }
 
-#about, #instructions, #download, #about-me {
+#about,#about2, #instructions, #download, #about-me {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 5px;
 }
 
-#about {
+#about,#about2 {
     background-color: #5575df;
 }
+
+#about2 {
+        text-align: center;
+    }
+
+    #about2 ul {
+        display: inline-block; /* Keeps the list items centered */
+        text-align: left; /* Aligns the list items to the left */
+    }
+
 .alternative-section {
     background-color: #5575df; /* Change this to your desired color */
     padding: 20px;
@@ -198,7 +208,7 @@ a {
 
 
 footer {
-    background-color: rgb(51, 174, 223); 
+    background-color: rgb(69, 116, 235); 
     text-align: center;
     padding: 10px;
     position: relative; 
