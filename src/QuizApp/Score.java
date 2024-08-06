@@ -14,6 +14,9 @@ public class Score extends JFrame implements ActionListener {
     setLayout(null);
     setResizable(false);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
+    setTitle("Amazing Quiz");
+    ImageIcon icon = new ImageIcon(getClass().getResource("/icons/quiz.png"));
+    setIconImage(icon.getImage());
 
     ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/sports.png"));
     Image i2 = i1.getImage().getScaledInstance(480,480,Image.SCALE_DEFAULT);
@@ -58,8 +61,7 @@ public class Score extends JFrame implements ActionListener {
     }
     public void actionPerformed(ActionEvent e){
         if(e.getSource()==Exit){
-            setVisible(false);
-            System.out.println("Exiting");
+            System.exit(0);
         }else {
             setVisible(false);
             new Login();

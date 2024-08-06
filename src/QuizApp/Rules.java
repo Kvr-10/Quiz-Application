@@ -11,6 +11,9 @@ public class Rules extends JFrame implements ActionListener {
     public Rules(String name){
         this.name=name;
         getContentPane().setBackground(Color.white);
+        setTitle("Amazing Quiz");
+        ImageIcon icon = new ImageIcon(getClass().getResource("/icons/quiz.png"));
+        setIconImage(icon.getImage());
 
         JLabel Welcome =new JLabel("Welcome "+name+" to Amazing Quiz !!");
         Welcome.setBounds(20,20,700,25);

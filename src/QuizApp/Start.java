@@ -34,6 +34,9 @@ public class Start extends JFrame implements ActionListener {
         setBounds(190, 130, 900, 500);
         getRootPane().setDefaultButton(next);
         setResizable(false);
+        setTitle("Amazing Quiz");
+        ImageIcon icon = new ImageIcon(getClass().getResource("/icons/quiz.png"));
+        setIconImage(icon.getImage());
 
         ImageIcon q = new ImageIcon(ClassLoader.getSystemResource("icons/basketball.png"));
         JLabel Questions = new JLabel(q);
