@@ -17,7 +17,6 @@ git clone git@github.com:Kvr-10/Quiz-Application.git
 After cloning the repository, navigate to the following path:
 ```
 Quiz-Application/out/artifacts/QuizApplication_jar/QuizApplication.jar
-
 ```
 ### Run the Game:
 Locate the `QuizApplication.jar` file in the directory.   
@@ -31,10 +30,10 @@ Download [Quiz-Application](https://github.com/Kvr-10/Quiz-Application/releases/
 Ensure you have Java installed on your system. You can download and install the latest version of Java from the [official website](https://www.java.com/en/).
 
 ## Skills
-**Java Programming**  
-**GUI Development**  
-**Event Handling**  
-**Data Persistence**  
+- **Java Programming**  
+- **GUI Development**  
+- **Event Handling**  
+- **Data Persistence**  
 
 ## Features
 - **User Authentication**: Players can log in to start the quiz.  
