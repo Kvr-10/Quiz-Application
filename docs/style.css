@@ -1,218 +1,253 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #4794eb;
-}
-.container {
-    max-width: 1000px; 
-    margin: 0 auto; 
-    padding: 0 15px; 
-    font-weight: bold;
-}
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #5e86f3; 
-}
-code {
     background-color: #f4f4f4;
-    border-radius: 3px;
-    padding: 2px 5px;
-    font-size: 1em;
-    overflow-wrap: break-word;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+header {
+    background-color: #701feb;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
 .header-content {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ensure it doesn't overflow */
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .header-img {
     width: 100px;
-    height: auto;
-    border-radius: 30%;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    height: 100px;
 }
 
-.header-img:hover {
-    transform: scale(1.1);
+h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
 .marquee-container {
     overflow: hidden; 
-    white-space: nowrap; 
     position: relative; 
-    height: 4em; 
+    padding: 10px 0; 
+    height: 60px; 
+    width: 100%; /* Ensure it fits within the viewport */
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .marquee {
-    display: inline-block; 
-    white-space: nowrap; 
-    padding-left: 100%; 
-    animation: marquee 20s linear infinite, colorChange 5s linear infinite; 
-    font-size: 1.2em; 
-    font-weight:bold;
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    color: #fff;
+    font-size: 1.2em;
 }
-
 
 @keyframes marquee {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);
     }
 }
 
-@keyframes colorChange {
-    0% { color: #6e4be3; } 
-    50% { color: #34870a9b; }
-    70% { color: #ef264b; } 
-    100% { color: #e3764b; } 
-}
-
-
-
-
-header p {
-    font-size: 1.2em;
-    font-weight: bold;
+h2 {
+    border-bottom: 2px solid #0553a0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 section {
-    margin: 20px 0;
-    padding: 15px;
-    text-align: center;
-}
-
-#about,#about2, #instructions, #download, #about-me {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 5px;
-}
-
-#about,#about2 {
-    background-color: #5575df;
-}
-
-#about2 {
-        text-align: center;
-    }
-
-    #about2 ul {
-        display: inline-block; /* Keeps the list items centered */
-        text-align: left; /* Aligns the list items to the left */
-    }
-
-.alternative-section {
-    background-color: #5575df; /* Change this to your desired color */
+    margin-bottom: 40px;
+    background-color: #e9ecef;
     padding: 20px;
     border-radius: 5px;
-    margin-top: 20px;
-}
-
-#instructions, #download, #about-me {
-    background-color: #5575df;;
-}
-
-h2 {
-    color: #333;
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('bullet.png') no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #003366;
+}
+
+.download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0e7ae6;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.repo-link1 {
     display: inline-block;
     padding: 10px 16px;
+    background-color: #8b41eb;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.0em;
 }
 
-.download-link, .repo-link {
-    background-color: #0056b3; 
+.repo-link1:hover {
+    background-color: #6431b7;
 }
 
-.download-link:hover, .repo-link:hover {
-    background-color: #003d80; 
+.download-link:hover {
+    background-color: #6431b7;
 }
 
-.repo-link {
-    font-size: 1.0em; 
+#about-me {
+    text-align: center;
 }
 
-
-#run-game {
-    background-color: #5575df;;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 20px 0;
-}
-
-#run-game h2 {
-    color: #333;
-    font-size: 1.5em;
-    margin-bottom: 15px;
+#about-me a {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .steps {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .step {
-    background-color: #7288eb;
-    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.clone-command {
+    color: #e91e63;
+}
+
+.directory-path {
+    color: #e91e63;
+}
+
+.step code {
+    background:  #e9ecef;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.alternative-section {
+    background-color: #e9ecef;
+    padding: 20px;
     border-radius: 5px;
-    font-size: 1.1em;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
-.step h3 {
-    margin-top: 0;
-    font-size: 1.2em;
-    color: #333;
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Ensure it doesn't overflow */
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
-.step p {
-    margin: 5px 0;
-    font-size: 1.1em;
-}
-
-#run-game code {
-    display: block;
-    background-color: #80b5ef;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: monospace;
-}
-
-#run-game a.download-link {
+.alternative-section .download-link {
     display: inline-block;
-    margin-top: 15px;
-    background-color: #0056b3;
-    color: #fff;
     padding: 10px 20px;
+    background-color: #8b41eb;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.alternative-section .download-link:hover {
+    background-color: #6431b7;
+}
+
+#about-me {
+    text-align: center;
+}
+
+#about-me h2 {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #003366;
+}
+
+#about-me p {
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+
+
+#about-me a.repo-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b41eb;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.0em;
 }
 
-#run-game a.download-link:hover {
-    background-color: #003d80;
+#about-me a.repo-link:hover {
+    background-color:#6431b7;
 }
-
-
 
 footer {
-    background-color: rgb(69, 116, 235); 
+    background-color: #701feb;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    position: relative; 
-    bottom: 0; 
-    width: 100%; 
-    color: #fff; 
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffdd57;
+    text-decoration: none;
 }
