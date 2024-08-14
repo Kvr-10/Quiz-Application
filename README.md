@@ -24,7 +24,7 @@ Double-click on `QuizApplication.jar` to start the game.
 
 ## Alternative
 You can directly download the JAR file from the [Releases page](https://github.com/Kvr-10/Quiz-Application/releases/latest) and run it.  
-Download [Quiz-Application](https://github.com/Kvr-10/Quiz-Application/releases/download/v1.0.0/QuizApplication.jar) game.
+Download [Quiz-Application](https://github.com/Kvr-10/Quiz-Application/releases/latest/download/QuizApplication.jar) game.
 
 ## Prerequisites
 Ensure you have Java installed on your system. You can download and install the latest version of Java from the [official website](https://www.java.com/en/).
