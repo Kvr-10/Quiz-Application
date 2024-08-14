@@ -38,6 +38,7 @@ header {
 .header-img {
     width: 100px;
     height: 100px;
+    max-width: 100%;
 }
 
 h1 {
