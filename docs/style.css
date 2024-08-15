@@ -198,9 +198,20 @@ ul li strong {
 
 .directory-path {
     color: #e91e63;
+    overflow-wrap: break-word; 
+    word-break: break-all; 
 }
 
 .step code {
+    background: #e9ecef;
+    padding: 5px;
+    border-radius: 4px;
+    display: block; 
+    overflow-wrap: break-word; 
+    word-break: break-all;
+}
+
+.step1 code {
     background: #e9ecef;
     padding: 5px;
     border-radius: 4px;
